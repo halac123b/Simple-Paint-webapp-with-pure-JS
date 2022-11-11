@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>River Paint</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="tools">
+    <button onclick="p.changeColor('#ff0000')">Red</button>
+    <button onclick="p.changeColor('#00ff00')">Green</button>
+    <button onclick="p.changeColor('#0000ff')">Blue</button>
+    <button onclick="p.changeColor('#000000')">Black</button>
+
+    <button onclick="p.changeLineWidth(1)">1</button>
+    <button onclick="p.changeLineWidth(3)">3</button>
+    <button onclick="p.changeLineWidth(5)">5</button>
+
+    <button onclick="p.changeTool('pen')">Pen</button>
+    <button onclick="p.changeTool('line')">Line</button>
+    <button onclick="p.changeTool('rect')">Rect</button>
+
+    <button onclick="p.undo()">Undo</button>
+    <button onclick="p.redo()">Redo</button>
+  </div>
+  <canvas id="board">
+
+  </canvas>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
